@@ -4,7 +4,7 @@ const app = express();
 //routes
 
 app.get('/hello', (req, res) => {
-    res.send("Task Manager says hello!");
+    res.send("Can only send a string?");
 });
 
 //testing here DELETE THIS! 
