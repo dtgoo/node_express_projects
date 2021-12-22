@@ -17,5 +17,5 @@ app.get('/hello', (req, res) => {
 
 //creating a port number and telling the browser to listen on that port number
 const port = 3000; 
-app.listen(port, console.log(`SERVER IS LISTENING ON ${port}...`));
+app.listen(port, console.log(`SERVER IS LISTENING ON PORT ${port}...`));
 
