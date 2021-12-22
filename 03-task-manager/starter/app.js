@@ -14,6 +14,8 @@ app.get('/hello', (req, res) => {
 //app.path('/api/v1/tasks/:id') - update task
 //app.delete('/api/v1/tasks/:id') - delete a task by ID
 
+
+//creating a port number and telling the browser to listen on that port number
 const port = 3000; 
 app.listen(port, console.log(`SERVER IS LISTENING ON ${port}...`));
 
