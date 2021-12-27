@@ -1,13 +1,11 @@
 
 
-
-
 const getAllTasks = (req,res) => {
-    res.send('All items from the file')
+    res.send('Get all tasks')
 }
 
 const createTask = (req,res) => {
-    res.send('Task has been created');
+    res.send("Create Task");
 }
 
 const getTask = (req,res) => {
