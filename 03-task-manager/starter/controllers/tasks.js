@@ -9,7 +9,7 @@ const createTask = (req,res) => {
 }
 
 const getTask = (req,res) => {
-    res.send('get single task');
+    res.send("get single tasks");
 }
 
 const updateTask = (req,res) => {
