@@ -1,11 +1,10 @@
 const mongoose = require('mongoose');
 
-const connectionString = "mongodb+srv://mongoDBuser:Casio414@nodeexpressprojects.jo4fb.mongodb.net/03-TASK-MANAGER?retryWrites=true&w=majority"
 
 
 
 const connectDB = (url) => {
-   return mongoose.connect(connectionString, {
+   return mongoose.connect(url, {
         useNewUrlParser: true,
         useCreateIndex: true,
         useFindAndModify: false,
@@ -13,5 +12,5 @@ const connectDB = (url) => {
     })
 }
 
-
+// only one, so just add one - no object. 
 module.exports = connectDB
