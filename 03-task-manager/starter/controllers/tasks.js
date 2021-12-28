@@ -5,7 +5,7 @@ const getAllTasks = (req,res) => {
 }
 
 const createTask = (req,res) => {
-    res.send("Create Task");
+    res.send("Create task");
 }
 
 const getTask = (req,res) => {
