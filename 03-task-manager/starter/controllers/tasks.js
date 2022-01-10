@@ -25,8 +25,8 @@ const createTask = async (req,res) => {
 
 const getTask = async (req,res) => {
     try {
-        const task = await Task.findOne();
-        res.send("get single tasks");
+        const task = await Task.findOne({id: req.params.id});
+        res.send({id: req.params.id});
     } catch (error) {
         res.status(500).send(error)
     }
