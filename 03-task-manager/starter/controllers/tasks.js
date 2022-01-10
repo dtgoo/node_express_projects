@@ -23,8 +23,13 @@ const createTask = async (req,res) => {
     }
 }
 
-const getTask = (req,res) => {
-    res.send("get single tasks");
+const getTask = async (req,res) => {
+    try {
+        const task = await Task.findOne();
+        res.send("get single tasks");
+    } catch (error) {
+        res.status(500).send(error)
+    }
 }
 
 const updateTask = (req,res) => {
