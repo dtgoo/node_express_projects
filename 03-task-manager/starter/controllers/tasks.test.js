@@ -5,5 +5,7 @@ function sum(a,b) {
 }
 
 test('adds 2 variables', () => {
-    expect(tasks.getAllTasks(1,2)).toBe(3);
+    expect(tasks.getTask(1,2)).toBe(3);
 })
+
+
