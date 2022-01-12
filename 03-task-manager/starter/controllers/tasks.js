@@ -1,10 +1,7 @@
 const Task = require('../models/Task')
 
 
-
-
-
-// models below 
+// these are controllers
 
 const getAllTasks = async (req,res) => {
     try {
@@ -48,7 +45,7 @@ const deleteTask = async (req,res) => {
         if(!task) {
             return res.status(404).json({msg: `no task with id: ${taskID}`})
         }
-        res.status(200).json({task});
+        res.status(200).send();
     }catch(error) {
         res.status(500).json({msg: error})
     }
