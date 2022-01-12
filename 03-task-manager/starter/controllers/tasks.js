@@ -1,3 +1,4 @@
+const { restart } = require('nodemon');
 const Task = require('../models/Task')
 
 
@@ -34,9 +35,6 @@ const getTask = async (req,res) => {
     }
 }
 
-const updateTask = (req,res) => {
-    res.send('update tasks');
-}
 
 const deleteTask = async (req,res) => {
     try {
@@ -50,6 +48,23 @@ const deleteTask = async (req,res) => {
         res.status(500).json({msg: error})
     }
 }
+
+
+const updateTask = async (req,res) => {
+
+
+    try {
+        const {id: taskID} = req.params;
+
+        res.status(200).json({id: taskID, data:req.body});
+
+    }catch(error){
+
+    }
+}
+
+
+
 module.exports = {
     getAllTasks,
     createTask,
