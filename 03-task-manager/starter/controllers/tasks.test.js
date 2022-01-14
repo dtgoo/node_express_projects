@@ -8,4 +8,6 @@ test('adds 2 variables', () => {
     expect(tasks.getTask(1,2)).toBe(3);
 })
 
-
+test('should give an ID for a task', () => {
+    expect(tasks.getTask(1,2)).toBe(3);
+})
