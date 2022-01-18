@@ -3,6 +3,7 @@ const Task = require('../models/Task')
 
 
 // these are controllers
+// will update to remove some duplicate code 
 
 const getAllTasks = async (req,res) => {
     try {
