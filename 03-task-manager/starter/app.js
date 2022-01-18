@@ -12,9 +12,9 @@ app.use(express.json());
 
 
 // more middleware 
-app.use('/api/v1/tasks', tasks)
-
- app.use(notFound);
+app.use('/api/v1/tasks', tasks);
+// route not found - if using an API route that doesn't exist
+app.use(notFound);
 
 //creating a port number and telling the browser to listen on that port number
 const port = 3000; 
