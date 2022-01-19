@@ -16,9 +16,9 @@ app.use(express.json());
 app.use('/api/v1/tasks', tasks);
 // route not found - if using an API route that doesn't exist
 app.use(notFound);
-
+app.use(errorHandlerMiddleware);
 //creating a port number and telling the browser to listen on that port number
-const port = 3000; 
+const port = process.env.PORT || 3000; 
 const start = async () => {
  try {
     await connectDB(process.env.MONGO_URI)
